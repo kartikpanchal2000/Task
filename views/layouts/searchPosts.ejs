@@ -1,0 +1,10 @@
+<!-- searchPosts.ejs -->
+<h1>Search Posts</h1>
+<form action="/search/posts" method="GET">
+  <input type="text" name="query" placeholder="Search posts by hashtag...">
+  <button type="submit">Search</button>
+</form>
+<!-- Display search results -->
+<% posts.forEach(post => { %>
+  <div><%= post.title %></div>
+<% }); %>

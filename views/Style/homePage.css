@@ -1,0 +1,9 @@
+.header
+{
+    height:50px;
+    background-color: lightblue;
+    max-width: fit-content;
+    margin: auto;
+    padding-bottom: 5px;    
+    text-align: center;
+}

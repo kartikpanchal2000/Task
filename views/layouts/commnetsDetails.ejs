@@ -1,0 +1,7 @@
+<!-- commentDetails.ejs -->
+<h2><%= comment.text %></h2>
+<button onclick="likeComment('<%= comment._id %>')">Like</button>
+<form action="/reply/<%= comment._id %>" method="POST">
+  <input type="text" name="reply" placeholder="Reply to this comment...">
+  <button type="submit">Reply</button>
+</form>
